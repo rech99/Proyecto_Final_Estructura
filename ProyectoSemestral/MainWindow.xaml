@@ -1,0 +1,27 @@
+﻿<Window x:Class="ProyectoSemestral.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:ProyectoSemestral"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListView x:Name="Tbl_PyS" HorizontalAlignment="Left" Height="323" VerticalAlignment="Top" Width="232" Margin="10,10,0,0">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Grid x:Name="Grid1" HorizontalAlignment="Left" Height="268" VerticalAlignment="Top" Width="503" Margin="267,10,0,0"/>
+        <Button x:Name="AZ" Content="Ordenar A-Z" Margin="31,350,686,49"/>
+        <Button x:Name="Za" Content="Ordenar Z-A" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="31,389,0,0"/>
+        <Button x:Name="Año_mayor" Content="▲ Año" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="156,350,0,0"/>
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Width="75"/>
+        <Button x:Name="Año_menor" Content="▼ Año" Margin="156,389,561,10"/>
+        <Button Content="Button" HorizontalAlignment="Left" Height="4" Margin="592,56,0,0" VerticalAlignment="Top" Width="1"/>
+        <Button x:Name="Nuevo" Content="Nuevo Elemento" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="267,10,0,0" Click="Nuevo_Click"/>
+
+    </Grid>
+</Window>
