@@ -55,6 +55,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Conjunto.cs" />
     <Compile Include="Editar.xaml.cs">
       <DependentUpon>Editar.xaml</DependentUpon>
     </Compile>
