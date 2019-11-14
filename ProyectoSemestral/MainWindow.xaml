@@ -14,10 +14,10 @@
         <Button x:Name="Año_menor" HorizontalAlignment="Left" VerticalAlignment="Top" Content="▼ Año"  Width="75" Margin="156,374,561,25"/>
         <Button Content="Button" HorizontalAlignment="Left" Height="4" Margin="592,56,0,0" VerticalAlignment="Top" Width="1"/>
         <Button x:Name="Nuevo" Content="Nuevo Elemento" HorizontalAlignment="Left" VerticalAlignment="Top" Width="100" Margin="267,10,0,0" Click="Nuevo_Click"/>
-        <ListView x:Name="lst_catalogo" HorizontalAlignment="Left"    Height="293" VerticalAlignment="Top" Width="221" Margin="10,10,0,0">
+        <ListView x:Name="lst_catalogo" HorizontalAlignment="Left"   Height="293" VerticalAlignment="Top" Width="221" Margin="10,10,0,0" >
             <ListView.View>
                 <GridView>
-                    <GridViewColumn  Header="Titulos"  Width="125" DisplayMemberBinding="{Binding Titulo}"/>
+                    <GridViewColumn  Header="Titulos"  Width="125" DisplayMemberBinding="{Binding Tit}"/>
                     <GridViewColumn Header="Año" Width="100" DisplayMemberBinding="{Binding Año}"/>
 
 

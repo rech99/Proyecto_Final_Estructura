@@ -8,32 +8,32 @@ namespace ProyectoSemestral
 {
     class Serie
     {
-        public string Titulo { get; set; }
-        public string Sinopsis { get; set; }
-        public string Genero { get; set; }
-        public string Productora { get; set; }
-        public string Director { get; set; }
+        public string Tit { get; set; }
+        public string Sin { get; set; }
+        public string Gen { get; set; }
+        public string Prod { get; set; }
+        public string Dir { get; set; }
         public int Año { get; set; }
-        public int Temporadas { get; set; }
+        public int Temp { get; set; }
 
-        public int Rating { get; set; }
+        public int Rat { get; set; }
 
 
-        public Serie(string titulo, string genero, string sinopsis, string productora, string director, int año, int temporadas, int rating)
+        public Serie(string tit, string gen, string sin, string prod, string dir, int año, int temp, int rat)
         {
-            this.Titulo = titulo;
+            this.Tit = tit;
             this.Año = año;
-            this.Genero = genero;
-            this.Director = director;
-            this.Sinopsis = sinopsis;
-            this.Rating = rating;
-            this.Temporadas = temporadas;
-            this.Productora = productora;
+            this.Gen = gen;
+            this.Dir = dir;
+            this.Sin = sin;
+            this.Rat = rat;
+            this.Temp = temp;
+            this.Prod = prod;
         }
 
         public override string ToString()
         {
-            return this.Titulo + this.Año;
+            return this.Tit + this.Año;
         }
 
 

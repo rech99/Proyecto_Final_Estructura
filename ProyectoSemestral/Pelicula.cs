@@ -8,26 +8,26 @@ namespace ProyectoSemestral
 {
     class Pelicula
     {
-        public string Titulo { get; set; }
+        public string Tit { get; set; }
         public int Año { get; set; }
-        public string Director { get; set; }
-        public string Genero { get; set; }
-        public string Sinopsis { get; set; }
-        public int  Rating {get; set;} 
+        public string Dir { get; set; }
+        public string Gen { get; set; }
+        public string Sin { get; set; }
+        public int  Rat {get; set;} 
 
-        public Pelicula (string director, string sinopsis, string genero, string titulo, int año, int rating)
+        public Pelicula (string dir, string sin, string gen, string tit, int año, int rat)
         {
-            this.Titulo = titulo;
+            this.Tit = tit;
             this.Año = año;
-            this.Genero = genero;
-            this.Director = director;
-            this.Sinopsis = sinopsis;
-            this.Rating = rating;
+            this.Gen = gen;
+            this.Dir = dir;
+            this.Sin = sin;
+            this.Rat = rat;
         }
 
         public override string ToString()
         {
-            return this.Titulo + this.Año;
+            return this.Tit + this.Año;
         }
 
     }
