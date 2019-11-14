@@ -29,14 +29,14 @@
             <ComboBoxItem>Amor</ComboBoxItem>
             <ComboBoxItem>Accion</ComboBoxItem>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="47" Height="17" Margin="68,193,0,0">
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="47" Height="23" Margin="68,193,0,0">
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>
             <ComboBoxItem>4</ComboBoxItem>
             <ComboBoxItem>5</ComboBoxItem>
         </ComboBox>
-        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Margin="99,78,0,0" Height="16">
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Margin="99,78,0,0" Height="23">
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>

@@ -25,7 +25,7 @@
         <TextBox x:Name="tb_nombre_e" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="77,10,0,0"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="352,10,0,0" Height="20" Width="89"><Run Text="Edita"/><Run Text="r Elemento"/></TextBlock>
         <Button x:Name="eleminar_e" Content="Eliminar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="155,237,0,0"/>
-        <ComboBox x:Name="cb_rating_e" HorizontalAlignment="Left" VerticalAlignment="Top" Width="29" Margin="76,193,0,0"/>
+        <ComboBox x:Name="cb_rating_e" HorizontalAlignment="Left" VerticalAlignment="Top" Width="29" Margin="76,193,0,0" Height="16"/>
         <ComboBox x:Name="cb_genero_e" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="212,44,0,0" Height="16"/>
     </Grid>
 </UserControl>
