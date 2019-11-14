@@ -13,28 +13,19 @@
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="26,112,0,0"><Run Text="Director:"/></TextBlock>
         <TextBlock TextWrapping="Wrap" Text="Sinopsis:" Margin="10,145,431,107"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="26,193,0,0" RenderTransformOrigin="0.189,0.303"><Run Text="Rating:"/></TextBlock>
-        <TextBox x:Name="tb_año" TextWrapping="Wrap" Margin="56,40,409,208"/>
-        <TextBox x:Name="tb_genero" TextWrapping="Wrap" Margin="201,44,261,208" RenderTransformOrigin="0.5,0.5">
-            <TextBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.789"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </TextBox.RenderTransform>
-        </TextBox>
-        <TextBox x:Name="tb_director" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="76,111,0,0"/>
-        <TextBox x:Name="tb_sinopsis" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="417" Margin="76,147,0,0"/>
-        <TextBox x:Name="tb_productor" HorizontalAlignment="Left" Height="23" Margin="246,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBox x:Name="tb_año_e" TextWrapping="Wrap" Margin="56,40,409,208"/>
+        <TextBox x:Name="tb_director_e" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="76,111,0,0"/>
+        <TextBox x:Name="tb_sinopsis_e" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="417" Margin="76,147,0,0"/>
+        <TextBox x:Name="tb_productor_e" HorizontalAlignment="Left" Height="23" Margin="246,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Productor:" VerticalAlignment="Top" Margin="181,81,0,0" Width="60"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top" Margin="27,78,0,0"/>
-        <TextBox x:Name="tb_temporadas" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="101,78,0,0"/>
-        <TextBox x:Name="tb_rating" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="76,192,0,0"/>
-        <Button x:Name="guardar" Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="56,237,0,0" RenderTransformOrigin="-0.481,0.412"/>
-        <Button x:Name="cancelar" Content="Cancelar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="246,237,0,0"/>
-        <TextBox x:Name="tb_nombre" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="77,10,0,0"/>
+        <TextBox x:Name="tb_temporadas_e" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="101,78,0,0"/>
+        <Button x:Name="guardar_e" Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="56,237,0,0" RenderTransformOrigin="-0.481,0.412"/>
+        <Button x:Name="cancelar_e" Content="Cancelar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="246,237,0,0"/>
+        <TextBox x:Name="tb_nombre_e" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="77,10,0,0"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="352,10,0,0" Height="20" Width="89"><Run Text="Edita"/><Run Text="r Elemento"/></TextBlock>
         <Button x:Name="eleminar_e" Content="Eliminar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="155,237,0,0"/>
+        <ComboBox x:Name="cb_rating_e" HorizontalAlignment="Left" VerticalAlignment="Top" Width="29" Margin="76,193,0,0"/>
+        <ComboBox x:Name="cb_genero_e" HorizontalAlignment="Left" VerticalAlignment="Top" Width="95" Margin="212,44,0,0" Height="16"/>
     </Grid>
 </UserControl>

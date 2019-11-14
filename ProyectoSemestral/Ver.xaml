@@ -13,28 +13,20 @@
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="26,112,0,0"><Run Text="Director:"/></TextBlock>
         <TextBlock TextWrapping="Wrap" Text="Sinopsis:" Margin="10,145,431,107"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="26,193,0,0" RenderTransformOrigin="0.189,0.303"><Run Text="Rating:"/></TextBlock>
-        <TextBox x:Name="tb_año" TextWrapping="Wrap" Margin="56,40,409,208"/>
-        <TextBox x:Name="tb_genero" TextWrapping="Wrap" Margin="201,44,261,208" RenderTransformOrigin="0.5,0.5">
-            <TextBox.RenderTransform>
-                <TransformGroup>
-                    <ScaleTransform/>
-                    <SkewTransform/>
-                    <RotateTransform Angle="0.789"/>
-                    <TranslateTransform/>
-                </TransformGroup>
-            </TextBox.RenderTransform>
-        </TextBox>
-        <TextBox x:Name="tb_director" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="76,111,0,0"/>
-        <TextBox x:Name="tb_sinopsis" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="417" Margin="76,147,0,0"/>
-        <TextBox x:Name="tb_productor" HorizontalAlignment="Left" Height="23" Margin="246,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="cb_año" TextWrapping="Wrap" Margin="56,40,409,208"/>
+        <TextBlock x:Name="cb_genero" TextWrapping="Wrap" Margin="201,44,261,208" RenderTransformOrigin="0.5,0.5">
+            
+        </TextBlock>
+        <TextBlock x:Name="cb_director" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="76,111,0,0"/>
+        <TextBlock x:Name="cb_sinopsis" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="417" Margin="76,147,0,0"/>
+        <TextBlock x:Name="cb_productor" HorizontalAlignment="Left" Height="23" Margin="246,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Productor:" VerticalAlignment="Top" Margin="181,81,0,0" Width="60"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top" Margin="27,78,0,0"/>
-        <TextBox x:Name="tb_temporadas" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="101,78,0,0"/>
-        <TextBox x:Name="tb_rating" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="76,192,0,0"/>
+        <TextBlock x:Name="cb_temporadas" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="101,78,0,0"/>
         <Button x:Name="eliminar_v" Content="Eliminar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="155,238,0,0"/>
-        <Button x:Name="cancelar" Content="Cancelar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="257,238,0,0"/>
-        <TextBox x:Name="tb_nombre" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="77,10,0,0"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="352,10,0,0" Height="20" Width="89"><Run Text="Ve"/><Run Text="r Elemento"/></TextBlock>
-        <Button Content="Habilitar Edicion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="27,238,0,0"/>
+        <Button x:Name="cancelar_v" Content="Cancelar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="257,238,0,0"/>
+        <TextBlock x:Name="cb_nombre" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="77,10,0,0"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="352,10,0,0" Height="16" Width="80"><Run Text="Ve"/><Run Text="r Elemento"/></TextBlock>
+        <Button x:Name="guardar_v" Content="Habilitar Edicion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="27,238,0,0"/>
     </Grid>
 </UserControl>

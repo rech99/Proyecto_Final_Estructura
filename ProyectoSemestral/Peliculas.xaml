@@ -9,18 +9,32 @@
     <Grid Background="White">
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nombre:" VerticalAlignment="Top" Margin="51,40,0,0" Height="15" Width="45"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Año:" VerticalAlignment="Top" Margin="73,67,0,0" Height="15" Width="23"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="184,67,0,0" Text="Genero:" RenderTransformOrigin="-0.29,2.791" Height="15" Width="40"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="184,67,0,0" Text="Genero:" RenderTransformOrigin="-0.29,2.791" Height="15" Width="45"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="52,87,0,0" Height="16" Width="44"><Run Text="Director:"/></TextBlock>
         <TextBlock TextWrapping="Wrap" Text="Sinopsis:" Margin="39,122,407,130"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="52,167,0,0" RenderTransformOrigin="0.189,0.303" Height="15" Width="36"><Run Text="Rating:"/></TextBlock>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="52,167,0,0" RenderTransformOrigin="0.189,0.303" Height="15" Width="38"><Run Text="Rating:"/></TextBlock>
         <TextBox x:Name="tb_año_P" TextWrapping="Wrap" Margin="101,60,342,186"/>
-        <TextBox x:Name="tb_genero_P" TextWrapping="Wrap" Margin="229,60,223,186"/>
         <TextBox x:Name="tb_director_P" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" Margin="101,87,0,0"/>
         <TextBox x:Name="tb_sinopsis_P" HorizontalAlignment="Left" Height="34" TextWrapping="Wrap" VerticalAlignment="Top" Width="374" Margin="101,122,0,0"/>
-        <TextBox x:Name="tb_rating_P" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" Margin="101,166,0,0"/>
         <Button x:Name="guardar_P" Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Margin="101,204,0,0" Height="20" />
         <Button x:Name="cancelar_P" Content="Cancelar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="74" Margin="196,204,0,0" Height="20"/>
         <TextBox x:Name="tb_nombre_P" HorizontalAlignment="Left" Height="22" TextWrapping="Wrap" VerticalAlignment="Top" Width="118" Margin="101,33,0,0"/>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="234,67,0,0" Height="15">
+            <ComboBoxItem>Terror</ComboBoxItem>
+            <ComboBoxItem>Suspenso</ComboBoxItem>
+            <ComboBoxItem>Thriller</ComboBoxItem>
+            <ComboBoxItem>Amor</ComboBoxItem>
+            <ComboBoxItem>Accion</ComboBoxItem>
+        </ComboBox>
+        <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="71" Margin="90,167,0,0" Height="15">
+            <ComboBoxItem>1</ComboBoxItem>
+            <ComboBoxItem>2</ComboBoxItem>
+            <ComboBoxItem>3</ComboBoxItem>
+            <ComboBoxItem>4</ComboBoxItem>
+            <ComboBoxItem>5</ComboBoxItem>
+        </ComboBox>
+
+
 
     </Grid>
 </UserControl>

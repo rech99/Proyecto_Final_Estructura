@@ -58,6 +58,8 @@
     <Compile Include="Editar.xaml.cs">
       <DependentUpon>Editar.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pelicula.cs" />
+    <Compile Include="Serie.cs" />
     <Compile Include="Series.xaml.cs">
       <DependentUpon>Series.xaml</DependentUpon>
     </Compile>
