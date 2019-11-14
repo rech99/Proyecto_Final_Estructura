@@ -36,5 +36,7 @@ namespace ProyectoSemestral
             Año_menor.Visibility = Visibility.Hidden;
             
         }
+
+        
     }
 }
