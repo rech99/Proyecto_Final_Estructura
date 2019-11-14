@@ -33,7 +33,7 @@ namespace ProyectoSemestral
 
         public override string ToString()
         {
-            return this.Titulo + " Año: " + this.Año;
+            return this.Titulo + this.Año;
         }
 
 
