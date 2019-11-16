@@ -27,6 +27,5 @@
         <Button x:Name="cancelar_v" Content="Cancelar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="257,238,0,0"/>
         <TextBlock x:Name="cb_nombre" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="77,10,0,0"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="352,10,0,0" Height="16" Width="80"><Run Text="Ve"/><Run Text="r Elemento"/></TextBlock>
-        <Button x:Name="guardar_v" Content="Habilitar Edicion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="103" Margin="27,238,0,0"/>
     </Grid>
 </UserControl>

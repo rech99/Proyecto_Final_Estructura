@@ -15,7 +15,6 @@ namespace ProyectoSemestral
         public string Dir { get; set; }
         public int Año { get; set; }
         public int Temp { get; set; }
-
         public int Rat { get; set; }
 
       

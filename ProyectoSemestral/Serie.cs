@@ -10,7 +10,7 @@ namespace ProyectoSemestral
     {
 
 
-        public Serie() { }
+       
         public Serie(string tit, string gen, string sin, string prod, string dir, int año, int temp, int rat)
         {
             Tit = tit;

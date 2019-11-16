@@ -11,7 +11,7 @@
             <RowDefinition Height="160*"/>
             <RowDefinition Height="259*"/>
         </Grid.RowDefinitions>
-        <Grid x:Name="Grid1" HorizontalAlignment="Left" Height="268" VerticalAlignment="Top" Width="503" Margin="267,10,0,0" />
+        <Grid x:Name="Grid1" HorizontalAlignment="Left" Height="384" VerticalAlignment="Top" Width="503" Margin="267,10,0,0" Grid.RowSpan="2" />
         <Button x:Name="AZ" Content="Ordenar A-Z" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="31,175.752,0,0" Grid.Row="1"/>
         <Button x:Name="Za" Content="Ordenar Z-A" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="31,213.752,0,0" Grid.Row="1"/>
         <Button x:Name="Año_mayor" Content="▲ Año" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="156,175.752,0,0" Grid.Row="1"/>
@@ -28,5 +28,6 @@
                 </GridView>
             </ListView.View>
         </ListView>
+        <Button x:Name="edicion" Visibility="Hidden" Content="habilitar edicion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="276,199,0,0" Grid.Row="1" Click="Edicion_Click"/>
     </Grid>
 </Window>
