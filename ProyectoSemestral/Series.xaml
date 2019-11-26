@@ -5,22 +5,20 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ProyectoSemestral"
              mc:Ignorable="d" 
-             d:DesignHeight="268" d:DesignWidth="503">
+             d:DesignHeight="384" d:DesignWidth="503">
     <Grid Background="White">
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nombre:" VerticalAlignment="Top" Margin="26,10,0,0"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Año:" VerticalAlignment="Top" Margin="27,44,0,0"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="155,44,0,0" Text="Genero:"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="26,112,0,0"><Run Text="Director:"/></TextBlock>
-        <TextBlock TextWrapping="Wrap" Text="Sinopsis:" Margin="10,145,431,107"/>
+        <TextBlock TextWrapping="Wrap" Text="Sinopsis:" Margin="10,145,431,220"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="26,193,0,0" RenderTransformOrigin="0.189,0.303"><Run Text="Rating:"/></TextBlock>
-        <TextBox x:Name="tb_año" TextWrapping="Wrap" Margin="56,40,409,208"/>
+        <TextBox x:Name="tb_año" TextWrapping="Wrap" Margin="56,40,409,324"/>
         <TextBox x:Name="tb_director" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="76,111,0,0"/>
         <TextBox x:Name="tb_sinopsis" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="417" Margin="76,147,0,0"/>
         <TextBox x:Name="tb_productor" HorizontalAlignment="Left" Height="23" Margin="246,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="179,81,0,0" Width="62" Height="20"><Run Text="Productor"/><Run Text="a"/><Run Text=":"/></TextBlock>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top" Margin="27,78,0,0"/>
-        <Button x:Name="guardar" Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="211,237,0,0"/>
-        <Button x:Name="cancelar" Content="Cancelar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="329,237,0,0"/>
         <TextBox x:Name="tb_nombre" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="77,10,0,0"/>
         <ComboBox HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="211,44,0,0">
             <ComboBoxItem>Terror</ComboBoxItem>

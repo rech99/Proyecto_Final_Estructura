@@ -12,8 +12,8 @@
             <RowDefinition Height="259*"/>
         </Grid.RowDefinitions>
         <Grid x:Name="Grid1" HorizontalAlignment="Left" Height="384" VerticalAlignment="Top" Width="503" Margin="267,10,0,0" Grid.RowSpan="2" />
-        <Button x:Name="AZ" Content="Ordenar A-Z" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="31,175.752,0,0" Grid.Row="1"/>
-        <Button x:Name="Za" Content="Ordenar Z-A" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="31,213.752,0,0" Grid.Row="1"/>
+        <Button x:Name="AZ" Content="Ordenar A-Z" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="31,175.752,0,0" Grid.Row="1" Click="AZ_Click"/>
+        <Button x:Name="Za" Content="Ordenar Z-A" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="31,213.752,0,0" Grid.Row="1" Click="Za_Click"/>
         <Button x:Name="Año_mayor" Content="▲ Año" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="156,175.752,0,0" Grid.Row="1"/>
         <Button x:Name="Año_menor" HorizontalAlignment="Left" VerticalAlignment="Top" Content="▼ Año"  Width="75" Margin="156,213.752,0,0" Grid.Row="1"/>
         <Button Content="Button" HorizontalAlignment="Left" Height="4" Margin="592,56,0,0" VerticalAlignment="Top" Width="1"/>
@@ -28,6 +28,13 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="edicion" Visibility="Hidden" Content="habilitar edicion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="276,199,0,0" Grid.Row="1" Click="Edicion_Click"/>
+        <Button x:Name="edicion" Visibility="Hidden" Content="Habilitar Edicion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="409,184,0,0" Grid.Row="1" Click="Edicion_Click"/>
+        <Button x:Name="btn_cancelar" Visibility="Hidden" Content="Cancelar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="618,184,0,0" Grid.Row="1" Click="Btn_cancelar_Click"/>
+        <Button x:Name="btn_guardar" Visibility="Hidden" Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="528,184,0,0" Grid.Row="1" RenderTransformOrigin="-0.027,-0.4"/>
+        <Image x:Name="una" Visibility="Hidden" Margin="334,50,425,174" Grid.Row="1" Source="1estrella.png" Stretch="Fill"/>
+        <Image x:Name="dos" Visibility="Hidden" Margin="339,46,408,174" Grid.Row="1" Source="2estrellas.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5"/>
+        <Image x:Name="tres" Visibility="Hidden" Margin="334,37,408,187" Grid.Row="1" Source="3estrellas.png" Stretch="Fill"/>
+        <Image x:Name="cuatro" Visibility="Hidden" Margin="339,37,386,187" Grid.Row="1" Source="4estrellas.png" Stretch="Fill"/>
+        <Image x:Name="cinco" Visibility="Hidden" Margin="339,37,405,187" Grid.Row="1" Source="5estrellas.png" Stretch="Fill"/>
     </Grid>
 </Window>

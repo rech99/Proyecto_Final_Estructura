@@ -24,5 +24,10 @@ namespace ProyectoSemestral
         {
             InitializeComponent();
         }
+
+        private void Cb_rating_e_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+
+        }
     }
 }
