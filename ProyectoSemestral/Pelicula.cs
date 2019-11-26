@@ -17,6 +17,7 @@ namespace ProyectoSemestral
             Dir = dir;
             Sin = sin;
             Rat = rat;
+            Categoria = "Pelicula";
         }
 
        

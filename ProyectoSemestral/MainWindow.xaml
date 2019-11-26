@@ -28,7 +28,7 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="edicion" Visibility="Hidden" Content="Habilitar Edicion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="409,184,0,0" Grid.Row="1" Click="Edicion_Click"/>
+        <Button x:Name="edicion" Visibility="Visible" Content="Habilitar Edicion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="334,184,0,0" Grid.Row="1" Click="Edicion_Click"/>
         <Button x:Name="btn_cancelar" Visibility="Hidden" Content="Cancelar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="618,184,0,0" Grid.Row="1" Click="Btn_cancelar_Click"/>
         <Button x:Name="btn_guardar" Visibility="Hidden" Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="528,184,0,0" Grid.Row="1" RenderTransformOrigin="-0.027,-0.4"/>
         <Image x:Name="una" Visibility="Hidden" Margin="334,50,425,174" Grid.Row="1" Source="1estrella.png" Stretch="Fill"/>
@@ -36,5 +36,7 @@
         <Image x:Name="tres" Visibility="Hidden" Margin="334,37,408,187" Grid.Row="1" Source="3estrellas.png" Stretch="Fill"/>
         <Image x:Name="cuatro" Visibility="Hidden" Margin="339,37,386,187" Grid.Row="1" Source="4estrellas.png" Stretch="Fill"/>
         <Image x:Name="cinco" Visibility="Hidden" Margin="339,37,405,187" Grid.Row="1" Source="5estrellas.png" Stretch="Fill"/>
+        <Button Content="Actualizar" Name="btn_actualizar" Visibility="Visible" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="448,184,0,0" Grid.Row="1" Click="Btn_actualizar_Click"/>
+        <Button Content="Eliminar" Name="btn_delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="487,123,0,0" Grid.Row="1" Click="Btn_delete_Click"/>
     </Grid>
 </Window>

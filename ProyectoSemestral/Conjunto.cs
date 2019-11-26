@@ -8,6 +8,7 @@ namespace ProyectoSemestral
 {
     class Conjunto 
     {
+        public string Categoria { get; set; }
         public string Tit { get; set; }
         public string Sin { get; set; }
         public string Gen { get; set; }

@@ -21,6 +21,7 @@ namespace ProyectoSemestral
             Rat = rat;
             Temp = temp;
             Prod = prod;
+            Categoria = "Serie";
         }
 
       

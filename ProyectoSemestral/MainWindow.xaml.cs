@@ -77,7 +77,9 @@ namespace ProyectoSemestral
                 Año_menor.Visibility = Visibility.Hidden;
                 btn_cancelar.Visibility = Visibility.Visible;
                 btn_guardar.Visibility = Visibility.Hidden;
+                btn_actualizar.Visibility = Visibility.Hidden;
 
+                ((Ver)(Grid1.Children[0])).tb_cat.Text = conjunto[lst_catalogo.SelectedIndex].Categoria;
                 ((Ver)(Grid1.Children[0])).cb_nombre.Text = conjunto[lst_catalogo.SelectedIndex].Tit;
                 ((Ver)(Grid1.Children[0])).cb_genero.Text = conjunto[lst_catalogo.SelectedIndex].Gen;
                 ((Ver)(Grid1.Children[0])).cb_sinopsis.Text = conjunto[lst_catalogo.SelectedIndex].Sin;
@@ -92,6 +94,15 @@ namespace ProyectoSemestral
                 tres.Visibility = Visibility.Hidden;
                 cuatro.Visibility = Visibility.Hidden;
                 cinco.Visibility = Visibility.Hidden;
+
+                if (((Ver)(Grid1.Children[0])).tb_cat.Text == "Pelicula")
+                {
+                    ((Ver)(Grid1.Children[0])).temp_ver.Visibility = Visibility.Hidden;
+                    ((Ver)(Grid1.Children[0])).cb_temporadas.Visibility = Visibility.Hidden;
+                    ((Ver)(Grid1.Children[0])).prod_ver.Visibility = Visibility.Hidden;
+                    ((Ver)(Grid1.Children[0])).cb_productor.Visibility = Visibility.Hidden;
+
+                }
 
 
                 if (((Ver)(Grid1.Children[0])).tb_img.Text == "1")
@@ -131,7 +142,11 @@ namespace ProyectoSemestral
 
             if (lst_catalogo.SelectedIndex != -1)
             {
+            
+
                 Grid1.Children.Clear();
+
+                
 
                 edicion.Visibility = Visibility.Hidden;
                 Nuevo.Visibility = Visibility.Hidden;
@@ -143,7 +158,7 @@ namespace ProyectoSemestral
                 btn_guardar.Visibility = Visibility.Visible;
                 Grid1.Children.Add(new Editar());
 
-
+                ((Editar)(Grid1.Children[0])).categ.Text = conjunto[lst_catalogo.SelectedIndex].Categoria;
                 ((Editar)(Grid1.Children[0])).tb_nombre_e.Text = conjunto[lst_catalogo.SelectedIndex].Tit;
                 ((Editar)(Grid1.Children[0])).cb_genero_e.Text = conjunto[lst_catalogo.SelectedIndex].Gen;
                 ((Editar)(Grid1.Children[0])).tb_sinopsis_e.Text = conjunto[lst_catalogo.SelectedIndex].Sin;
@@ -168,7 +183,11 @@ namespace ProyectoSemestral
             Año_menor.Visibility = Visibility.Visible;
             btn_cancelar.Visibility = Visibility.Hidden;
             btn_guardar.Visibility = Visibility.Hidden;
-
+            una.Visibility = Visibility.Hidden;
+            dos.Visibility = Visibility.Hidden;
+            tres.Visibility = Visibility.Hidden;
+            cuatro.Visibility = Visibility.Hidden;
+            cinco.Visibility = Visibility.Hidden;
         }
 
         private void AZ_Click(object sender, RoutedEventArgs e)
@@ -213,6 +232,26 @@ namespace ProyectoSemestral
 
                 }
             } while (swap == true);
+        }
+
+        private void Btn_actualizar_Click(object sender, RoutedEventArgs e)
+        {
+            conjunto[lst_catalogo.SelectedIndex].Tit = ((Editar)(Grid1.Children[0])).tb_nombre_e.Text;
+            conjunto[lst_catalogo.SelectedIndex].Gen = ((Editar)(Grid1.Children[0])).cb_genero_e.Text;
+            conjunto[lst_catalogo.SelectedIndex].Sin = ((Editar)(Grid1.Children[0])).tb_sinopsis_e.Text;
+            conjunto[lst_catalogo.SelectedIndex].Prod = ((Editar)(Grid1.Children[0])).tb_productor_e.Text;
+            conjunto[lst_catalogo.SelectedIndex].Dir = ((Editar)(Grid1.Children[0])).tb_director_e.Text;
+            conjunto[lst_catalogo.SelectedIndex].Temp = Convert.ToInt32(((Editar)(Grid1.Children[0])).tb_temporadas_e.Text);
+            conjunto[lst_catalogo.SelectedIndex].Año = Convert.ToInt32(((Editar)(Grid1.Children[0])).tb_año_e.Text);
+            conjunto[lst_catalogo.SelectedIndex].Rat  = Convert.ToInt32(((Editar)(Grid1.Children[0])).cb_rating_e.Text);
+        }
+
+        private void Btn_delete_Click(object sender, RoutedEventArgs e)
+        {
+            if(lst_catalogo.SelectedIndex != -1)
+            {
+                conjunto.RemoveAt(lst_catalogo.SelectedIndex);
+            }
         }
     }
 

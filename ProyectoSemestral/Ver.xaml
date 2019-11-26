@@ -23,10 +23,10 @@
         <TextBlock x:Name="prod_ver" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Productor:" VerticalAlignment="Top" Margin="181,81,0,0" Width="60"/>
         <TextBlock x:Name="temp_ver" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top" Margin="27,78,0,0"/>
         <TextBlock x:Name="cb_temporadas" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="101,78,0,0"/>
-        <Button x:Name="eliminar_v" Content="Eliminar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="155,238,0,0"/>
         <TextBlock x:Name="cb_nombre" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="77,10,0,0"/>
-        <TextBlock x:Name="ver" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="352,10,0,0" Height="16" Width="80"><Run Text="Ve"/><Run Text="r Elemento"/></TextBlock>
-        <TextBox HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" Text="TextBox" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="ver" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="404,10,0,0" Height="16" Width="80"><Run Text="Ve"/><Run Text="r Elemento"/></TextBlock>
         <TextBox Visibility="Hidden" x:Name="tb_img" TextWrapping="Wrap" Margin="68,193,407,168"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Categoria:" VerticalAlignment="Top" Margin="255,10,0,0"/>
+        <TextBlock Name="tb_cat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="314,10,0,0" Width="66"/>
     </Grid>
 </UserControl>
