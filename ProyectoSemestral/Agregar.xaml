@@ -7,10 +7,10 @@
              mc:Ignorable="d" 
              d:DesignHeight="268" d:DesignWidth="503">
     <Grid Background="White">
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Agregar Nuevo Elemnto" VerticalAlignment="Top" Margin="3,4,0,0"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top" Margin="3,35,0,0"/>
-        <RadioButton x:Name="rb_pelicula" Content="Pelicula&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="3,56,0,0" Checked="Cb_pelicula_Checked"/>
-        <RadioButton x:Name="rb_serie" Content="Serie&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,56,0,0" Height="14" Checked="Cb_serie_Checked"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Agregar Nuevo Elemento" VerticalAlignment="Top" Margin="3,4,0,0" FontWeight="Bold"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top" Margin="3,35,0,0" FontWeight="Bold"/>
+        <RadioButton x:Name="rb_pelicula" Content="Pelicula&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="3,56,0,0" Checked="Cb_pelicula_Checked" FontStyle="Italic"/>
+        <RadioButton x:Name="rb_serie" Content="Serie&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,56,0,0" Height="14" Checked="Cb_serie_Checked" FontStyle="Italic"/>
         <Grid x:Name="grid_2" HorizontalAlignment="Left" Height="279" VerticalAlignment="Top" Width="493" Margin="10,75,0,-86"/>
 
     </Grid>

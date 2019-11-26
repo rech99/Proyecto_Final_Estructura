@@ -32,7 +32,7 @@ namespace ProyectoSemestral
             Pelicula peli2 = new Pelicula("Guillermo Del Toro", "Drama fantastico sobre la Guerra Civil Española", "Drama", "El Laberinto del Fauno", 2006, 5);
             Pelicula peli3 = new Pelicula("Alejandro G. Iñarritu", "Comedia Negra de superheroes", "Drama", "Birdman", 2014, 4);
 
-            Serie ser1 = new Serie("Supernatural", "Terror", "Hermanos se enfrentan a lo desconcoido", "Warner", "Jeffrey Dean Morgan", 2006, 5, 3);
+            Serie ser1 = new Serie("Supernatural", "Terror", "Hermanos se enfrentan a lo desconcoido", "Warner", "Jeffrey Dean Morgan", 2003, 5, 3);
             Serie ser2 = new Serie("Los Simpsons", "Comedia", "Aventuras de una famila disfuncianal", "Fox", "Matt Groening", 1999, 30, 2);
 
             conjunto.Add(peli1);
@@ -155,7 +155,15 @@ namespace ProyectoSemestral
                 Año_mayor.Visibility = Visibility.Hidden;
                 Año_menor.Visibility = Visibility.Hidden;
                 btn_cancelar.Visibility = Visibility.Visible;
-                btn_guardar.Visibility = Visibility.Visible;
+                btn_guardar.Visibility = Visibility.Hidden;
+                btn_delete.Visibility = Visibility.Visible;
+                btn_actualizar.Visibility = Visibility.Visible;
+                una.Visibility = Visibility.Hidden;
+                dos.Visibility = Visibility.Hidden;
+                tres.Visibility = Visibility.Hidden;
+                cuatro.Visibility = Visibility.Hidden;
+                cinco.Visibility = Visibility.Hidden;
+
                 Grid1.Children.Add(new Editar());
 
                 ((Editar)(Grid1.Children[0])).categ.Text = conjunto[lst_catalogo.SelectedIndex].Categoria;
@@ -251,7 +259,57 @@ namespace ProyectoSemestral
             if(lst_catalogo.SelectedIndex != -1)
             {
                 conjunto.RemoveAt(lst_catalogo.SelectedIndex);
+                Grid1.Children.Clear();
+                una.Visibility = Visibility.Hidden;
+                dos.Visibility = Visibility.Hidden;
+                tres.Visibility = Visibility.Hidden;
+                cuatro.Visibility = Visibility.Hidden;
+                cinco.Visibility = Visibility.Hidden;
+                btn_delete.Visibility = Visibility.Hidden;
+                btn_actualizar.Visibility = Visibility.Hidden;
+                btn_cancelar.Visibility = Visibility.Hidden;
             }
+        }
+
+        private void Año_mayor_Click(object sender, RoutedEventArgs e)
+        {
+            bool proceso = false;
+            do
+            {
+                proceso = false;
+                for (int i = 0; i < conjunto.Count - 1; i++)
+                {
+                    if (conjunto[i].Año < conjunto[i + 1].Año)
+                    {
+                        var temp = conjunto[i];
+                        conjunto[i] = conjunto[i + 1];
+                        conjunto[i + 1] = temp;
+                        proceso = true;
+                    }
+                }
+            }
+            while (proceso);
+
+        }
+
+        private void Año_menor_Click(object sender, RoutedEventArgs e)
+        {
+            bool proceso = false;
+            do
+            {
+                proceso = false;
+                for (int i = 0; i < conjunto.Count - 1; i++)
+                {
+                    if (conjunto[i].Año > conjunto[i + 1].Año)
+                    {
+                        var temp = conjunto[i];
+                        conjunto[i] = conjunto[i + 1];
+                        conjunto[i + 1] = temp;
+                        proceso = true;
+                    }
+                }
+            }
+            while (proceso);
         }
     }
 
