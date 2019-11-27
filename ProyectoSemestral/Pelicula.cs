@@ -9,7 +9,7 @@ namespace ProyectoSemestral
     class Pelicula : Conjunto
     {
    
-        public Pelicula (string dir, string sin, string gen, string tit, int año, int rat)
+        public Pelicula (string dir, string sin, string gen, string tit, int año, string rat)
         {
             Tit = tit;
             Año = año;

@@ -25,19 +25,9 @@ namespace ProyectoSemestral
             InitializeComponent();
         }
 
-        private void Cb_pelicula_Checked(object sender, RoutedEventArgs e)
-        {
-            grid_2.Children.Clear();
-            grid_2.Children.Add(new Peliculas());
-            
-        }
+        
 
-        private void Cb_serie_Checked(object sender, RoutedEventArgs e)
-        {
-            grid_2.Children.Clear();
-            grid_2.Children.Add(new Series());
-            
-        }
+        
         
     }
 }

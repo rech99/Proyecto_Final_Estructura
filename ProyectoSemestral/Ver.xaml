@@ -7,26 +7,26 @@
              mc:Ignorable="d" 
              d:DesignHeight="384" d:DesignWidth="503">
     <Grid Background="White">
-        <TextBlock x:Name="nombre_ver" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nombre:" VerticalAlignment="Top" Margin="26,10,0,0" FontWeight="Bold"/>
-        <TextBlock x:Name="año_ver" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Año:" VerticalAlignment="Top" Margin="27,44,0,0" FontWeight="Bold"/>
-        <TextBlock x:Name="gen_ver" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="155,44,0,0" Text="Genero:" FontWeight="Bold"/>
-        <TextBlock x:Name="dir_ver" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="26,112,0,0" FontWeight="Bold"><Run Text="Director:"/></TextBlock>
-        <TextBlock x:Name="sin_ver" TextWrapping="Wrap" Margin="26,147,415,218" FontWeight="Bold"><Run Text="Sinopsis:"/></TextBlock>
-        <TextBlock x:Name="rat_ver" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="26,193,0,0" RenderTransformOrigin="0.189,0.303" FontWeight="Bold"><Run Text="Rating:"/></TextBlock>
-        <TextBlock x:Name="cb_año" TextWrapping="Wrap" Margin="56,40,409,324"/>
-        <TextBlock x:Name="cb_genero" TextWrapping="Wrap" Margin="201,44,222,324" RenderTransformOrigin="0.5,0.5">
+        <TextBlock x:Name="nombre_ver" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nombre:" VerticalAlignment="Top" Margin="14,143,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="año_ver" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Año:" VerticalAlignment="Top" Margin="15,177,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="gen_ver" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="143,177,0,0" Text="Genero:" FontWeight="Bold"/>
+        <TextBlock x:Name="dir_ver" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="14,245,0,0" FontWeight="Bold"><Run Text="Director:"/></TextBlock>
+        <TextBlock x:Name="sin_ver" TextWrapping="Wrap" Margin="14,280,427,85" FontWeight="Bold"><Run Text="Sinopsis:"/></TextBlock>
+        <TextBlock x:Name="rat_ver" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="314,248,0,0" RenderTransformOrigin="0.189,0.303" FontWeight="Bold"><Run Text="Rating:"/></TextBlock>
+        <TextBlock x:Name="cb_año" TextWrapping="Wrap" Margin="44,173,421,191"/>
+        <TextBlock x:Name="cb_genero" TextWrapping="Wrap" Margin="189,177,234,191" RenderTransformOrigin="0.5,0.5">
 
         </TextBlock>
-        <TextBlock x:Name="cb_director" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="76,111,0,0"/>
-        <TextBlock x:Name="cb_sinopsis" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="417" Margin="76,147,0,0"/>
-        <TextBlock x:Name="cb_productor" HorizontalAlignment="Left" Height="23" Margin="246,81,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
-        <TextBlock x:Name="prod_ver" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Productor:" VerticalAlignment="Top" Margin="181,81,0,0" Width="65" FontWeight="Bold"/>
-        <TextBlock x:Name="temp_ver" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top" Margin="27,78,0,0" FontWeight="Bold"/>
-        <TextBlock x:Name="cb_temporadas" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="101,78,0,0"/>
-        <TextBlock x:Name="cb_nombre" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="77,10,0,0"/>
-        <TextBlock x:Name="ver" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="404,10,0,0" Height="16" Width="80" FontWeight="Bold"><Run Text="Ve"/><Run Text="r Elemento"/></TextBlock>
+        <TextBlock x:Name="cb_director" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="64,244,0,0"/>
+        <TextBlock x:Name="cb_sinopsis" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="417" Margin="64,280,0,0"/>
+        <TextBlock x:Name="cb_productor" HorizontalAlignment="Left" Height="23" Margin="234,214,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock x:Name="prod_ver" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Productor:" VerticalAlignment="Top" Margin="169,214,0,0" Width="65" FontWeight="Bold"/>
+        <TextBlock x:Name="temp_ver" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top" Margin="15,211,0,0" FontWeight="Bold"/>
+        <TextBlock x:Name="cb_temporadas" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="66" Margin="89,211,0,0"/>
+        <TextBlock x:Name="cb_nombre" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="65,143,0,0"/>
+        <TextBlock x:Name="ver" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="392,143,0,0" Height="16" Width="80" FontWeight="Bold"><Run Text="Ve"/><Run Text="r Elemento"/></TextBlock>
         <TextBox Visibility="Hidden" x:Name="tb_img" TextWrapping="Wrap" Margin="68,193,407,168"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Categoria:" VerticalAlignment="Top" Margin="255,10,0,0" FontWeight="Bold"/>
-        <TextBlock Name="tb_cat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="314,10,0,0" Width="66"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Categoria:" VerticalAlignment="Top" Margin="243,143,0,0" FontWeight="Bold"/>
+        <TextBlock Name="tb_cat" HorizontalAlignment="Left" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Margin="302,143,0,0" Width="66"/>
     </Grid>
 </UserControl>

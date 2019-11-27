@@ -11,7 +11,7 @@ namespace ProyectoSemestral
 
 
        
-        public Serie(string tit, string gen, string sin, string prod, string dir, int año, int temp, int rat)
+        public Serie(string tit, string gen, string sin, string prod, string dir, int año, string temp, string rat)
         {
             Tit = tit;
             Año = año;

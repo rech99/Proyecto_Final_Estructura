@@ -5,13 +5,41 @@
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ProyectoSemestral"
              mc:Ignorable="d" 
-             d:DesignHeight="268" d:DesignWidth="503">
+             d:DesignHeight="384" d:DesignWidth="503">
     <Grid Background="White">
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Agregar Nuevo Elemento" VerticalAlignment="Top" Margin="3,4,0,0" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top" Margin="3,35,0,0" FontWeight="Bold"/>
-        <RadioButton x:Name="rb_pelicula" Content="Pelicula&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="3,56,0,0" Checked="Cb_pelicula_Checked" FontStyle="Italic"/>
-        <RadioButton x:Name="rb_serie" Content="Serie&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="90,56,0,0" Height="14" Checked="Cb_serie_Checked" FontStyle="Italic"/>
-        <Grid x:Name="grid_2" HorizontalAlignment="Left" Height="279" VerticalAlignment="Top" Width="493" Margin="10,75,0,-86"/>
-
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Nombre:" VerticalAlignment="Top" Margin="27,103,0,0" FontWeight="Bold" FontFamily="Arial Rounded MT Bold"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Año:" VerticalAlignment="Top" Margin="28,137,0,0" FontWeight="Bold" FontFamily="Arial Rounded MT Bold"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="18,174,0,0" Text="Genero:" FontWeight="Bold" FontFamily="Arial Rounded MT Bold"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="18,205,0,0" FontWeight="Bold" FontFamily="Arial Rounded MT Bold" Width="61"><Run Text="Director:"/></TextBlock>
+        <TextBlock TextWrapping="Wrap" Text="Sinopsis:" Margin="13,240,431,127" FontWeight="Bold" FontFamily="Arial Rounded MT Bold"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="27,286,0,0" RenderTransformOrigin="0.189,0.303" FontWeight="Bold" FontFamily="Arial Rounded MT Bold"><Run Text="Rating:"/></TextBlock>
+        <TextBox x:Name="tb_año" TextWrapping="Wrap" Margin="57,133,376,225"/>
+        <TextBox x:Name="tb_director" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="77,204,0,0"/>
+        <TextBox x:Name="tb_sinopsis" HorizontalAlignment="Left" Height="35" TextWrapping="Wrap" VerticalAlignment="Top" Width="417" Margin="77,240,0,0"/>
+        <TextBox x:Name="tb_productor" HorizontalAlignment="Left" Height="23" Margin="359,187,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="285,187,0,0" Width="74" Height="20" FontWeight="Bold" FontFamily="Arial"><Run Text="Productor"/><Run Text="a"/><Run Text=":"/></TextBlock>
+        <TextBlock Name="texto_temp" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Temporadas:" VerticalAlignment="Top" Margin="285,148,0,0" FontWeight="Bold" FontFamily="Arial Rounded MT Bold"/>
+        <TextBox x:Name="tb_nombre" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="120" Margin="88,103,0,0"/>
+        <ComboBox Name="tb_genero" HorizontalAlignment="Left" VerticalAlignment="Top" Width="120" Margin="77,172,0,0">
+            <ComboBoxItem Content="Terror"/>
+            <ComboBoxItem Content="Suspenso"/>
+            <ComboBoxItem Content="Thriller"/>
+            <ComboBoxItem Content="Amor"/>
+            <ComboBoxItem Content="Accion"/>
+        </ComboBox>
+        <ComboBox Name="cb_rat" HorizontalAlignment="Left" VerticalAlignment="Top" Width="47" Height="23" Margin="69,286,0,0">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+        </ComboBox>
+        <ComboBox x:Name="cb_temp" HorizontalAlignment="Left" VerticalAlignment="Top" Width="40" Margin="372,148,0,0" Height="23">
+            <ComboBoxItem Content="1"/>
+            <ComboBoxItem Content="2"/>
+            <ComboBoxItem Content="3"/>
+            <ComboBoxItem Content="4"/>
+            <ComboBoxItem Content="5"/>
+        </ComboBox>
     </Grid>
 </UserControl>

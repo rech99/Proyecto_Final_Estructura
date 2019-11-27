@@ -28,12 +28,12 @@ namespace ProyectoSemestral
         {
             InitializeComponent();
 
-            Pelicula peli1 = new Pelicula("Martin Campbell", "James Bond se embarca en su primera mision", "Accion", "007 Casino Royale", 2007, 5);
-            Pelicula peli2 = new Pelicula("Guillermo Del Toro", "Drama fantastico sobre la Guerra Civil Española", "Drama", "El Laberinto del Fauno", 2006, 5);
-            Pelicula peli3 = new Pelicula("Alejandro G. Iñarritu", "Comedia Negra de superheroes", "Drama", "Birdman", 2014, 4);
+            Pelicula peli1 = new Pelicula("Martin Campbell", "James Bond se embarca en su primera mision", "Accion", "007 Casino Royale", 2007, "5");
+            Pelicula peli2 = new Pelicula("Guillermo Del Toro", "Drama fantastico sobre la Guerra Civil Española", "Drama", "El Laberinto del Fauno", 2006, "5");
+            Pelicula peli3 = new Pelicula("Alejandro G. Iñarritu", "Comedia Negra de superheroes", "Drama", "Birdman", 2014, "4");
 
-            Serie ser1 = new Serie("Supernatural", "Terror", "Hermanos se enfrentan a lo desconcoido", "Warner", "Jeffrey Dean Morgan", 2003, 5, 3);
-            Serie ser2 = new Serie("Los Simpsons", "Comedia", "Aventuras de una famila disfuncianal", "Fox", "Matt Groening", 1999, 30, 2);
+            Serie ser1 = new Serie("Supernatural", "Terror", "Hermanos se enfrentan a lo desconcoido", "Warner", "Jeffrey Dean Morgan", 2003, "5","3");
+            Serie ser2 = new Serie("Los Simpsons", "Comedia", "Aventuras de una famila disfuncianal", "Fox", "Matt Groening", 1999, "30", "2");
 
             conjunto.Add(peli1);
             conjunto.Add(peli2);
@@ -85,15 +85,16 @@ namespace ProyectoSemestral
                 ((Ver)(Grid1.Children[0])).cb_sinopsis.Text = conjunto[lst_catalogo.SelectedIndex].Sin;
                 ((Ver)(Grid1.Children[0])).cb_productor.Text = conjunto[lst_catalogo.SelectedIndex].Prod;
                 ((Ver)(Grid1.Children[0])).cb_director.Text = conjunto[lst_catalogo.SelectedIndex].Dir;
-                ((Ver)(Grid1.Children[0])).cb_temporadas.Text = conjunto[lst_catalogo.SelectedIndex].Temp.ToString();
+                ((Ver)(Grid1.Children[0])).cb_temporadas.Text = conjunto[lst_catalogo.SelectedIndex].Temp;
                 ((Ver)(Grid1.Children[0])).cb_año.Text = conjunto[lst_catalogo.SelectedIndex].Año.ToString();
-                ((Ver)(Grid1.Children[0])).tb_img.Text = conjunto[lst_catalogo.SelectedIndex].Rat.ToString();
+                ((Ver)(Grid1.Children[0])).tb_img.Text = conjunto[lst_catalogo.SelectedIndex].Rat;
 
                 una.Visibility = Visibility.Hidden;
                 dos.Visibility = Visibility.Hidden;
                 tres.Visibility = Visibility.Hidden;
                 cuatro.Visibility = Visibility.Hidden;
                 cinco.Visibility = Visibility.Hidden;
+                btn_delete.Visibility = Visibility.Hidden;
 
                 if (((Ver)(Grid1.Children[0])).tb_cat.Text == "Pelicula")
                 {
@@ -163,6 +164,8 @@ namespace ProyectoSemestral
                 tres.Visibility = Visibility.Hidden;
                 cuatro.Visibility = Visibility.Hidden;
                 cinco.Visibility = Visibility.Hidden;
+                brn_guardar_2.Visibility = Visibility.Hidden;
+                btn_guardar_3.Visibility = Visibility.Hidden;
 
                 Grid1.Children.Add(new Editar());
 
@@ -172,9 +175,9 @@ namespace ProyectoSemestral
                 ((Editar)(Grid1.Children[0])).tb_sinopsis_e.Text = conjunto[lst_catalogo.SelectedIndex].Sin;
                 ((Editar)(Grid1.Children[0])).tb_productor_e.Text = conjunto[lst_catalogo.SelectedIndex].Prod;
                 ((Editar)(Grid1.Children[0])).tb_director_e.Text = conjunto[lst_catalogo.SelectedIndex].Dir;
-                ((Editar)(Grid1.Children[0])).tb_temporadas_e.Text = conjunto[lst_catalogo.SelectedIndex].Temp.ToString();
+                ((Editar)(Grid1.Children[0])).tb_temporadas_e.Text = conjunto[lst_catalogo.SelectedIndex].Temp;
                 ((Editar)(Grid1.Children[0])).tb_año_e.Text = conjunto[lst_catalogo.SelectedIndex].Año.ToString();
-                ((Editar)(Grid1.Children[0])).cb_rating_e.Text = conjunto[lst_catalogo.SelectedIndex].Rat.ToString();
+                ((Editar)(Grid1.Children[0])).cb_rating_e.Text = conjunto[lst_catalogo.SelectedIndex].Rat;
             }
             lst_catalogo.Items.Refresh();
         }
@@ -196,6 +199,9 @@ namespace ProyectoSemestral
             tres.Visibility = Visibility.Hidden;
             cuatro.Visibility = Visibility.Hidden;
             cinco.Visibility = Visibility.Hidden;
+            brn_guardar_2.Visibility = Visibility.Hidden;
+            btn_guardar_3.Visibility = Visibility.Hidden;
+            btn_delete.Visibility = Visibility.Hidden;
         }
 
         private void AZ_Click(object sender, RoutedEventArgs e)
@@ -249,9 +255,9 @@ namespace ProyectoSemestral
             conjunto[lst_catalogo.SelectedIndex].Sin = ((Editar)(Grid1.Children[0])).tb_sinopsis_e.Text;
             conjunto[lst_catalogo.SelectedIndex].Prod = ((Editar)(Grid1.Children[0])).tb_productor_e.Text;
             conjunto[lst_catalogo.SelectedIndex].Dir = ((Editar)(Grid1.Children[0])).tb_director_e.Text;
-            conjunto[lst_catalogo.SelectedIndex].Temp = Convert.ToInt32(((Editar)(Grid1.Children[0])).tb_temporadas_e.Text);
+            conjunto[lst_catalogo.SelectedIndex].Temp = ((Editar)(Grid1.Children[0])).tb_temporadas_e.Text;
             conjunto[lst_catalogo.SelectedIndex].Año = Convert.ToInt32(((Editar)(Grid1.Children[0])).tb_año_e.Text);
-            conjunto[lst_catalogo.SelectedIndex].Rat  = Convert.ToInt32(((Editar)(Grid1.Children[0])).cb_rating_e.Text);
+            conjunto[lst_catalogo.SelectedIndex].Rat  = ((Editar)(Grid1.Children[0])).cb_rating_e.Text;
         }
 
         private void Btn_delete_Click(object sender, RoutedEventArgs e)
@@ -268,6 +274,7 @@ namespace ProyectoSemestral
                 btn_delete.Visibility = Visibility.Hidden;
                 btn_actualizar.Visibility = Visibility.Hidden;
                 btn_cancelar.Visibility = Visibility.Hidden;
+                btn_delete.Visibility = Visibility.Hidden;
             }
         }
 
@@ -310,6 +317,75 @@ namespace ProyectoSemestral
                 }
             }
             while (proceso);
+        }
+
+        
+
+        private void Rb_pelicula_Checked(object sender, RoutedEventArgs e)
+        {
+            Grid1.Children.Clear();
+            Grid1.Children.Add(new Agregar());
+
+            ((Agregar)(Grid1.Children[0])).cb_temp.Visibility = Visibility.Hidden;
+            ((Agregar)(Grid1.Children[0])).texto_temp.Visibility = Visibility.Hidden;
+            brn_guardar_2.Visibility = Visibility.Visible;
+            btn_guardar_3.Visibility = Visibility.Hidden;
+
+        }
+
+        private void Rb_serie_Checked(object sender, RoutedEventArgs e)
+        {
+            Grid1.Children.Clear();
+            Grid1.Children.Add(new Agregar());
+
+            brn_guardar_2.Visibility = Visibility.Hidden;
+            btn_guardar_3.Visibility = Visibility.Visible;
+        }
+
+        private void Brn_guardar_2_Click(object sender, RoutedEventArgs e)
+        {
+
+            if (rb_pelicula.IsChecked == true)
+                {
+                
+                
+
+
+                conjunto.Add(new Pelicula(
+                    ((Agregar)(Grid1.Children[0])).tb_director.Text,
+                    ((Agregar)(Grid1.Children[0])).tb_sinopsis.Text, 
+                    ((Agregar)(Grid1.Children[0])).tb_genero.Text,
+                    ((Agregar)(Grid1.Children[0])).tb_nombre.Text,
+                    Convert.ToInt32(((Agregar)(Grid1.Children[0])).tb_año.Text), 
+                    ((Agregar)(Grid1.Children[0])).cb_rat.Text));
+
+
+                lst_catalogo.Items.Refresh();
+                Grid1.Children.Clear();
+            }
+        }
+
+        private void Btn_guardar_3_Click(object sender, RoutedEventArgs e)
+        {
+            if (rb_serie.IsChecked == true)
+            {
+
+
+
+
+                conjunto.Add(new Serie(
+                    ((Agregar)Grid1.Children[0]).tb_nombre.Text,
+                    ((Agregar)Grid1.Children[0]).tb_genero.Text,
+                    ((Agregar)Grid1.Children[0]).tb_sinopsis.Text,
+                    ((Agregar)Grid1.Children[0]).tb_productor.Text,
+                    ((Agregar)Grid1.Children[0]).tb_director.Text,
+                    Convert.ToInt32(((Agregar)Grid1.Children[0]).tb_año.Text),
+                    ((Agregar)Grid1.Children[0]).cb_temp.Text,
+                    ((Agregar)Grid1.Children[0]).cb_rat.Text)) ;
+
+                lst_catalogo.Items.Refresh();
+                Grid1.Children.Clear();
+            }
         }
     }
 
