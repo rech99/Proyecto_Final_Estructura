@@ -23,6 +23,7 @@
         <TextBox x:Name="tb_nombre_e" HorizontalAlignment="Left" Height="23" TextWrapping="Wrap" VerticalAlignment="Top" Width="214" Margin="71,129,0,0"/>
         <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Margin="346,129,0,0" Height="20" Width="94" FontWeight="Bold"><Run Text="Edita"/><Run Text="r Elemento"/></TextBlock>
         <ComboBox x:Name="cb_rating_e" HorizontalAlignment="Left" VerticalAlignment="Top" Width="29" Margin="70,312,0,0" Height="23" SelectionChanged="Cb_rating_e_SelectionChanged" >
+            <ComboBoxItem>0</ComboBoxItem>
             <ComboBoxItem>1</ComboBoxItem>
             <ComboBoxItem>2</ComboBoxItem>
             <ComboBoxItem>3</ComboBoxItem>

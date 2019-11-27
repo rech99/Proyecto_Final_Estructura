@@ -28,21 +28,22 @@
                 </GridView>
             </ListView.View>
         </ListView>
-        <Button x:Name="edicion" Visibility="Hidden" Content="Habilitar Edicion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="334,184,0,0" Grid.Row="1" Click="Edicion_Click"/>
-        <Button x:Name="btn_cancelar" Visibility="Hidden" Content="Cancelar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="618,184,0,0" Grid.Row="1" Click="Btn_cancelar_Click"/>
-        <Button x:Name="btn_guardar" Visibility="Hidden" Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="528,184,0,0" Grid.Row="1" RenderTransformOrigin="-0.027,-0.4"/>
+        <Button x:Name="edicion" Visibility="Hidden" Content="Habilitar Edicion" HorizontalAlignment="Left" VerticalAlignment="Top" Width="105" Margin="295,176,0,0" Grid.Row="1" Click="Edicion_Click"/>
+        <Button x:Name="btn_cancelar" Visibility="Hidden" Content="Cancelar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="645,176,0,0" Grid.Row="1" Click="Btn_cancelar_Click"/>
+       
         <Image x:Name="una" Visibility="Hidden" Margin="633,97,114,123" Grid.Row="1" Source="1estrella.png" Stretch="Fill"/>
         <Image x:Name="dos" Visibility="Hidden" Margin="633,97,114,123" Grid.Row="1" Source="2estrellas.png" Stretch="Fill" RenderTransformOrigin="0.5,0.5"/>
         <Image x:Name="tres" Visibility="Hidden" Margin="628,88,114,136" Grid.Row="1" Source="3estrellas.png" Stretch="Fill"/>
         <Image x:Name="cuatro" Visibility="Hidden" Margin="633,88,92,136" Grid.Row="1" Source="4estrellas.png" Stretch="Fill"/>
         <Image x:Name="cinco" Visibility="Hidden" Margin="633,88,111,136" Grid.Row="1" Source="5estrellas.png" Stretch="Fill"/>
-        <Button Content="Actualizar" Name="btn_actualizar" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="448,184,0,0" Grid.Row="1" Click="Btn_actualizar_Click"/>
-        <Button Visibility="Hidden" Content="Eliminar" Name="btn_delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="528,181,0,0" Grid.Row="1" Click="Btn_delete_Click"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Agregar Nuevo Elemento" VerticalAlignment="Top" Margin="441,7,0,0" FontWeight="Bold"/>
-        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top" Margin="441,38,0,0" FontWeight="Bold"/>
-        <RadioButton x:Name="rb_pelicula" Content="Pelicula&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="441,59,0,0"  FontStyle="Italic" Checked="Rb_pelicula_Checked"/>
-        <RadioButton x:Name="rb_serie" Content="Serie&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="528,59,0,0" Height="14"  FontStyle="Italic" Checked="Rb_serie_Checked"/>
-        <Button Name="brn_guardar_2" Visibility="Hidden" Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="672,164,0,0" Grid.Row="1" Click="Brn_guardar_2_Click"/>
+        <Button Content="Actualizar" Name="btn_actualizar" Visibility="Hidden" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="405,176,0,0" Grid.Row="1" Click="Btn_actualizar_Click"/>
+        <Button Visibility="Hidden" Content="Eliminar" Name="btn_delete" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="485,176,0,0" Grid.Row="1" Click="Btn_delete_Click"/>
+        <TextBlock Visibility="Hidden" Name="tit_agregar" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Agregar Nuevo Elemento" VerticalAlignment="Top" Margin="441,7,0,0" FontWeight="Bold"/>
+        <TextBlock Visibility="Hidden" Name="txt_tipo" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Tipo:" VerticalAlignment="Top" Margin="441,38,0,0" FontWeight="Bold"/>
+        <RadioButton Visibility="Hidden" x:Name="rb_pelicula" Content="Pelicula&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="441,59,0,0"  FontStyle="Italic" Checked="Rb_pelicula_Checked"/>
+        <RadioButton Visibility="Hidden" x:Name="rb_serie" Content="Serie&#xA;" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="528,59,0,0" Height="14"  FontStyle="Italic" Checked="Rb_serie_Checked"/>
+        <Button Name="brn_guardar_2" Visibility="Hidden" Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="645,151,0,0" Grid.Row="1" Click="Brn_guardar_2_Click"/>
         <Button Name="btn_guardar_3" Visibility="Hidden" Content="Guardar" HorizontalAlignment="Left" VerticalAlignment="Top" Width="75" Margin="565,176,0,0" Grid.Row="1" Click="Btn_guardar_3_Click"/>
+        <TextBlock Visibility="Hidden" Name="error_oxxo" Foreground="Red" HorizontalAlignment="Left" Height="80" TextWrapping="Wrap" Text="ERROR: LLENA TODOS LOS CAMPOS" VerticalAlignment="Top" Width="164" Margin="618,10,0,0" FontSize="18" FontStyle="Italic" TextDecorations="Underline" FontWeight="Bold"/>
     </Grid>
 </Window>

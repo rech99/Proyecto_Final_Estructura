@@ -28,6 +28,7 @@
             <ComboBoxItem Content="Accion"/>
         </ComboBox>
         <ComboBox Name="cb_rat" HorizontalAlignment="Left" VerticalAlignment="Top" Width="47" Height="23" Margin="69,286,0,0">
+            <ComboBoxItem Content="0"/>
             <ComboBoxItem Content="1"/>
             <ComboBoxItem Content="2"/>
             <ComboBoxItem Content="3"/>
